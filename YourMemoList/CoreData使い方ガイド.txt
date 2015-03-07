@@ -1,0 +1,58 @@
+/* ----------------
+Objective-CとCoreDataでつくるメモ帳サンプル
+---------------- */
+
+★プロジェクトを作ってから行う作業
+
+① フレームワークのインポート
+→ CoreData.frameworkの追加
+
+② プロジェクトを右クリック
+→ New File > CoreDataの「Data Model」をを選択してNext > Model.xcdatamodeldをプロジェクトに追加
+ 
+③ Modelを選択してエンティティとカラムを追加
+→ 「Add Entity」を追加して名前は「Memo」にします
+
+④ Entityを選択してAttributeを追加
+→ 「Add Attribute」を追加して下のように3つのAttributeを追加
+・Attribute: memo_id Type: Integer64 説明: メモID → プライマリーキーにアクセスできないのでIDを作成
+・Attribute: title   Type: String    説明: タイトル → メモのタイトル
+・Attribute: detail  Type: String    説明: 本文 → メモの本文
+
+⑤ AppDelegate.hとAppDelegate.mにCoreDataに関する設定を行う
+→ 各ファイルを参照してください
+
+⑥ NSManagedObjectクラスを継承したEntity用のクラスを作成
+→ New File > CoreDataの「NSManagedObject subclass」を選択 > Model選択の際に「Model」にチェックを入れる > Entity選択の際に「Memo」にチェックを入れる > クラスファイルを作成
+
+⑦ 実装にあたっての参考URL
+http://qiita.com/KawabataLemon/items/3e7732c54fe26b995f76
+
+
+★参考になりそうな資料
+
+◎概念に関するもの
+http://d.hatena.ne.jp/glass-_-onion/20111015/1318667971
+http://d.hatena.ne.jp/glass-_-onion/20111124/1322091736
+
+◎データの振る舞いに関する解説
+http://xcatsan.blogspot.jp/2010/06/coredata-object-idnsmanagedobjectid.html
+
+◎疑似的にidを割り振る理由
+http://www.ict-fractal.com/blog/2012/04/coredataentity.html
+http://blog.livedoor.jp/melodybox/archives/5515364.html
+
+◎ちょっと応用編
+http://slowdays.hotcom-web.com/wordpress/?p=75
+http://slowdays.hotcom-web.com/wordpress/?p=78
+http://akisute.com/2010/05/core-data-delete-insert.html
+※関連付けする場合はもしかするとCoreDataの関連付けではなくってコードでしたほうが良いのかな (このへんはパフォーマンス次第かな...)
+
+★諸注意
+◎Attributeを新しく追加した場合、一度アプリを消して再度シミュレータを立ち上げないといけない
+→ 前のスキーマがアプリ内に残ってしまうため
+
+◎実際の運用ではスキーマを変えた場合はマイグレーションが必要
+→ アップデートしたらアプリが起動できないあるあるらしい（やったことまだないからわかんないけど）
+http://hippos-lab.com/blog/node/367
+http://qiita.com/edo_m18/items/717fe32d744a10df7179

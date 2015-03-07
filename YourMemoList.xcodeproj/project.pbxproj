@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE9DBBB81AA9CED900FE2970 /* MemoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9DBBB71AA9CED900FE2970 /* MemoDetailViewController.m */; };
+		DE9DBBBC1AA9D46100FE2970 /* Memo.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9DBBBB1AA9D46100FE2970 /* Memo.m */; };
+		DE9DBBC11AA9DA4500FE2970 /* MemoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9DBBBF1AA9DA4500FE2970 /* MemoTableViewCell.m */; };
+		DE9DBBC21AA9DA4500FE2970 /* MemoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE9DBBC01AA9DA4500FE2970 /* MemoTableViewCell.xib */; };
+		DE9DBBC61AA9DBAF00FE2970 /* DeviseSize.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9DBBC51AA9DBAF00FE2970 /* DeviseSize.m */; };
+		DE9DBBCA1AA9F3FD00FE2970 /* Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9DBBC91AA9F3FD00FE2970 /* Validation.m */; };
+		DEC1D1081AA9215200713C75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC1D1071AA9215200713C75 /* main.m */; };
+		DEC1D10B1AA9215200713C75 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC1D10A1AA9215200713C75 /* AppDelegate.m */; };
+		DEC1D10E1AA9215200713C75 /* MemoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC1D10D1AA9215200713C75 /* MemoListViewController.m */; };
+		DEC1D1111AA9215200713C75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEC1D10F1AA9215200713C75 /* Main.storyboard */; };
+		DEC1D1131AA9215200713C75 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEC1D1121AA9215200713C75 /* Images.xcassets */; };
+		DEC1D1161AA9215200713C75 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEC1D1141AA9215200713C75 /* LaunchScreen.xib */; };
+		DEC1D1221AA9215200713C75 /* YourMemoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC1D1211AA9215200713C75 /* YourMemoListTests.m */; };
+		DEC1D12C1AA9225100713C75 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC1D12B1AA9225100713C75 /* CoreData.framework */; };
+		DEC1D1351AA9248F00713C75 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DEC1D1331AA9248F00713C75 /* Model.xcdatamodeld */; };
+		DEC1D1371AA925EC00713C75 /* CoreData使い方ガイド.txt in Resources */ = {isa = PBXBuildFile; fileRef = DEC1D1361AA925EC00713C75 /* CoreData使い方ガイド.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DEC1D11C1AA9215200713C75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEC1D0FA1AA9215200713C75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEC1D1011AA9215200713C75;
+			remoteInfo = YourMemoList;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DE9DBBB61AA9CED900FE2970 /* MemoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoDetailViewController.h; sourceTree = "<group>"; };
+		DE9DBBB71AA9CED900FE2970 /* MemoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoDetailViewController.m; sourceTree = "<group>"; };
+		DE9DBBBA1AA9D46100FE2970 /* Memo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Memo.h; sourceTree = "<group>"; };
+		DE9DBBBB1AA9D46100FE2970 /* Memo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Memo.m; sourceTree = "<group>"; };
+		DE9DBBBE1AA9DA4500FE2970 /* MemoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoTableViewCell.h; sourceTree = "<group>"; };
+		DE9DBBBF1AA9DA4500FE2970 /* MemoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoTableViewCell.m; sourceTree = "<group>"; };
+		DE9DBBC01AA9DA4500FE2970 /* MemoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemoTableViewCell.xib; sourceTree = "<group>"; };
+		DE9DBBC41AA9DBAF00FE2970 /* DeviseSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviseSize.h; sourceTree = "<group>"; };
+		DE9DBBC51AA9DBAF00FE2970 /* DeviseSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviseSize.m; sourceTree = "<group>"; };
+		DE9DBBC81AA9F3FD00FE2970 /* Validation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Validation.h; sourceTree = "<group>"; };
+		DE9DBBC91AA9F3FD00FE2970 /* Validation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Validation.m; sourceTree = "<group>"; };
+		DEC1D1021AA9215200713C75 /* YourMemoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourMemoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEC1D1061AA9215200713C75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEC1D1071AA9215200713C75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DEC1D1091AA9215200713C75 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DEC1D10A1AA9215200713C75 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DEC1D10C1AA9215200713C75 /* MemoListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoListViewController.h; sourceTree = "<group>"; };
+		DEC1D10D1AA9215200713C75 /* MemoListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoListViewController.m; sourceTree = "<group>"; };
+		DEC1D1101AA9215200713C75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DEC1D1121AA9215200713C75 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DEC1D1151AA9215200713C75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DEC1D11B1AA9215200713C75 /* YourMemoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YourMemoListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEC1D1201AA9215200713C75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEC1D1211AA9215200713C75 /* YourMemoListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YourMemoListTests.m; sourceTree = "<group>"; };
+		DEC1D12B1AA9225100713C75 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DEC1D1341AA9248F00713C75 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		DEC1D1361AA925EC00713C75 /* CoreData使い方ガイド.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "CoreData使い方ガイド.txt"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEC1D0FF1AA9215200713C75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEC1D12C1AA9225100713C75 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEC1D1181AA9215200713C75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE9DBBB51AA96D3300FE2970 /* GuideLine */ = {
+			isa = PBXGroup;
+			children = (
+				DEC1D1361AA925EC00713C75 /* CoreData使い方ガイド.txt */,
+			);
+			name = GuideLine;
+			sourceTree = "<group>";
+		};
+		DE9DBBB91AA9D1C400FE2970 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				DEC1D1091AA9215200713C75 /* AppDelegate.h */,
+				DEC1D10A1AA9215200713C75 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		DE9DBBBD1AA9D51000FE2970 /* Memo */ = {
+			isa = PBXGroup;
+			children = (
+				DE9DBBBA1AA9D46100FE2970 /* Memo.h */,
+				DE9DBBBB1AA9D46100FE2970 /* Memo.m */,
+			);
+			name = Memo;
+			sourceTree = "<group>";
+		};
+		DE9DBBC31AA9DA5600FE2970 /* MemoTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DE9DBBBE1AA9DA4500FE2970 /* MemoTableViewCell.h */,
+				DE9DBBBF1AA9DA4500FE2970 /* MemoTableViewCell.m */,
+				DE9DBBC01AA9DA4500FE2970 /* MemoTableViewCell.xib */,
+			);
+			name = MemoTableViewCell;
+			sourceTree = "<group>";
+		};
+		DE9DBBC71AA9DC0800FE2970 /* DeviseSize */ = {
+			isa = PBXGroup;
+			children = (
+				DE9DBBC41AA9DBAF00FE2970 /* DeviseSize.h */,
+				DE9DBBC51AA9DBAF00FE2970 /* DeviseSize.m */,
+			);
+			name = DeviseSize;
+			sourceTree = "<group>";
+		};
+		DE9DBBCB1AA9F41300FE2970 /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				DE9DBBC81AA9F3FD00FE2970 /* Validation.h */,
+				DE9DBBC91AA9F3FD00FE2970 /* Validation.m */,
+			);
+			name = Validation;
+			sourceTree = "<group>";
+		};
+		DEC1D0F91AA9215200713C75 = {
+			isa = PBXGroup;
+			children = (
+				DEC1D12B1AA9225100713C75 /* CoreData.framework */,
+				DEC1D1041AA9215200713C75 /* YourMemoList */,
+				DEC1D11E1AA9215200713C75 /* YourMemoListTests */,
+				DEC1D1031AA9215200713C75 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DEC1D1031AA9215200713C75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEC1D1021AA9215200713C75 /* YourMemoList.app */,
+				DEC1D11B1AA9215200713C75 /* YourMemoListTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEC1D1041AA9215200713C75 /* YourMemoList */ = {
+			isa = PBXGroup;
+			children = (
+				DEC1D1331AA9248F00713C75 /* Model.xcdatamodeld */,
+				DE9DBBB51AA96D3300FE2970 /* GuideLine */,
+				DE9DBBB91AA9D1C400FE2970 /* AppDelegate */,
+				DE9DBBBD1AA9D51000FE2970 /* Memo */,
+				DE9DBBC71AA9DC0800FE2970 /* DeviseSize */,
+				DE9DBBC31AA9DA5600FE2970 /* MemoTableViewCell */,
+				DE9DBBCB1AA9F41300FE2970 /* Validation */,
+				DEC1D10C1AA9215200713C75 /* MemoListViewController.h */,
+				DEC1D10D1AA9215200713C75 /* MemoListViewController.m */,
+				DE9DBBB61AA9CED900FE2970 /* MemoDetailViewController.h */,
+				DE9DBBB71AA9CED900FE2970 /* MemoDetailViewController.m */,
+				DEC1D10F1AA9215200713C75 /* Main.storyboard */,
+				DEC1D1121AA9215200713C75 /* Images.xcassets */,
+				DEC1D1141AA9215200713C75 /* LaunchScreen.xib */,
+				DEC1D1051AA9215200713C75 /* Supporting Files */,
+			);
+			path = YourMemoList;
+			sourceTree = "<group>";
+		};
+		DEC1D1051AA9215200713C75 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DEC1D1061AA9215200713C75 /* Info.plist */,
+				DEC1D1071AA9215200713C75 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DEC1D11E1AA9215200713C75 /* YourMemoListTests */ = {
+			isa = PBXGroup;
+			children = (
+				DEC1D1211AA9215200713C75 /* YourMemoListTests.m */,
+				DEC1D11F1AA9215200713C75 /* Supporting Files */,
+			);
+			path = YourMemoListTests;
+			sourceTree = "<group>";
+		};
+		DEC1D11F1AA9215200713C75 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DEC1D1201AA9215200713C75 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEC1D1011AA9215200713C75 /* YourMemoList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEC1D1251AA9215200713C75 /* Build configuration list for PBXNativeTarget "YourMemoList" */;
+			buildPhases = (
+				DEC1D0FE1AA9215200713C75 /* Sources */,
+				DEC1D0FF1AA9215200713C75 /* Frameworks */,
+				DEC1D1001AA9215200713C75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YourMemoList;
+			productName = YourMemoList;
+			productReference = DEC1D1021AA9215200713C75 /* YourMemoList.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DEC1D11A1AA9215200713C75 /* YourMemoListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEC1D1281AA9215200713C75 /* Build configuration list for PBXNativeTarget "YourMemoListTests" */;
+			buildPhases = (
+				DEC1D1171AA9215200713C75 /* Sources */,
+				DEC1D1181AA9215200713C75 /* Frameworks */,
+				DEC1D1191AA9215200713C75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEC1D11D1AA9215200713C75 /* PBXTargetDependency */,
+			);
+			name = YourMemoListTests;
+			productName = YourMemoListTests;
+			productReference = DEC1D11B1AA9215200713C75 /* YourMemoListTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEC1D0FA1AA9215200713C75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = just1factory;
+				TargetAttributes = {
+					DEC1D1011AA9215200713C75 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					DEC1D11A1AA9215200713C75 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = DEC1D1011AA9215200713C75;
+					};
+				};
+			};
+			buildConfigurationList = DEC1D0FD1AA9215200713C75 /* Build configuration list for PBXProject "YourMemoList" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DEC1D0F91AA9215200713C75;
+			productRefGroup = DEC1D1031AA9215200713C75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEC1D1011AA9215200713C75 /* YourMemoList */,
+				DEC1D11A1AA9215200713C75 /* YourMemoListTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEC1D1001AA9215200713C75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEC1D1111AA9215200713C75 /* Main.storyboard in Resources */,
+				DEC1D1161AA9215200713C75 /* LaunchScreen.xib in Resources */,
+				DEC1D1371AA925EC00713C75 /* CoreData使い方ガイド.txt in Resources */,
+				DEC1D1131AA9215200713C75 /* Images.xcassets in Resources */,
+				DE9DBBC21AA9DA4500FE2970 /* MemoTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEC1D1191AA9215200713C75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEC1D0FE1AA9215200713C75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE9DBBCA1AA9F3FD00FE2970 /* Validation.m in Sources */,
+				DEC1D10E1AA9215200713C75 /* MemoListViewController.m in Sources */,
+				DE9DBBBC1AA9D46100FE2970 /* Memo.m in Sources */,
+				DE9DBBC61AA9DBAF00FE2970 /* DeviseSize.m in Sources */,
+				DEC1D10B1AA9215200713C75 /* AppDelegate.m in Sources */,
+				DE9DBBC11AA9DA4500FE2970 /* MemoTableViewCell.m in Sources */,
+				DEC1D1081AA9215200713C75 /* main.m in Sources */,
+				DE9DBBB81AA9CED900FE2970 /* MemoDetailViewController.m in Sources */,
+				DEC1D1351AA9248F00713C75 /* Model.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEC1D1171AA9215200713C75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEC1D1221AA9215200713C75 /* YourMemoListTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DEC1D11D1AA9215200713C75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEC1D1011AA9215200713C75 /* YourMemoList */;
+			targetProxy = DEC1D11C1AA9215200713C75 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DEC1D10F1AA9215200713C75 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEC1D1101AA9215200713C75 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DEC1D1141AA9215200713C75 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEC1D1151AA9215200713C75 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DEC1D1231AA9215200713C75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DEC1D1241AA9215200713C75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEC1D1261AA9215200713C75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YourMemoList/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DEC1D1271AA9215200713C75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YourMemoList/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DEC1D1291AA9215200713C75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = YourMemoListTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YourMemoList.app/YourMemoList";
+			};
+			name = Debug;
+		};
+		DEC1D12A1AA9215200713C75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = YourMemoListTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YourMemoList.app/YourMemoList";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEC1D0FD1AA9215200713C75 /* Build configuration list for PBXProject "YourMemoList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEC1D1231AA9215200713C75 /* Debug */,
+				DEC1D1241AA9215200713C75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEC1D1251AA9215200713C75 /* Build configuration list for PBXNativeTarget "YourMemoList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEC1D1261AA9215200713C75 /* Debug */,
+				DEC1D1271AA9215200713C75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEC1D1281AA9215200713C75 /* Build configuration list for PBXNativeTarget "YourMemoListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEC1D1291AA9215200713C75 /* Debug */,
+				DEC1D12A1AA9215200713C75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DEC1D1331AA9248F00713C75 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DEC1D1341AA9248F00713C75 /* Model.xcdatamodel */,
+			);
+			currentVersion = DEC1D1341AA9248F00713C75 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DEC1D0FA1AA9215200713C75 /* Project object */;
+}
