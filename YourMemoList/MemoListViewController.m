@@ -29,14 +29,12 @@
 - (void)viewWillAppear:(BOOL)animated {
     
     //リロードをかけてコアデータを読み込む
-    [self.memoListTable reloadData];
+    fetchCount = 0;
     [self selectRecordAndCountToCoreData];
+    [self.memoListTable reloadData];
 }
 
 - (void)viewDidLoad {
-    
-    //fetchCountの初期値設定
-    fetchCount = 0;
     
     //delegateとdataSourceの設定
     self.memoListTable.delegate = self;
